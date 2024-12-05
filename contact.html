@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>TTT-Through the tough</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="contactbg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+            <span><img src="img/11.png" width="94px"></span>
+            </a>
+            <ul>
+                <li><a href="/" style="color: black;">Home</a></li>
+                <li><a href="/posts.html" style="color: black;">Posts</a></li>
+                <li><a href="/contact.html" style="color: black;">Contact</a></li>
+            </ul>
+        </div>
+       
+            </nav>
+    <div class="contact-container">
+        <form class="contact-left" action="https://api.web3forms.com/submit" method="POST">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="28b446c5-af3f-4d10-b6d8-5bbf3ef69c88">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="number" name="num" placeholder="Your Phone No" class="contact-inputs" required>
+            <textarea name="message" placeholder="Enter your message here" class="contact-inputs" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   
+    <script src="autocomplete.js"></script>
+</body>
+</html>
